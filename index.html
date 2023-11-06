@@ -94,18 +94,8 @@
     <div style=" width: 53%; height: 100%; display: flex;">
       <!-- receta -->
       <div style="width:75%">
-        <h1 id="txtModal">Ingredientes</h1>
-        <ul style="line-height: 1;" id="listaIngredientes" id="ingrediente">
-          <li><p id="ingrediente">Ají (al gusto)</p></li>
-          <li><p id="ingrediente">Ajo (2-3 dientes)</p></li>
-          <li><p id="ingrediente">Sal (al gusto)</p></li>
-          <li><p id="ingrediente">Pimienta (al gusto)</p></li>
-          <li><p id="ingrediente">Jugo de limón (1-2 cucharadas)</p></li>
-          <li><p id="ingrediente">Aceite de Oliva (opcional, 1-2 cucharadas)</p></li>
-         
-        </ul>
-        <h1 id="txtModal">preparacion</h1>
-        <p id="preparacion">
+        
+        <p id="preparacion" style="margin-top:120px;">
           En un mortero, agrega los ajíes picantes junto con los dientes de ajo pelados y troceados.
           Comienza a moler los ajíes y el ajo en el mortero con un movimiento circular utilizando el mano del mortero. Continúa machacando hasta obtener una pasta suave y bien combinada.
           Agrega sal al gusto y mezcla bien.
@@ -173,38 +163,59 @@
       image.addEventListener('click', function(){
          // Your code here
          console.log('Image clicked!');
-        
+
+        //Primer acercamiento
         if(index==0){
          modal.style.display = 'flex';
-         headerModal.innerHTML = "Ají en Mortero";
-         imgModal.src = "assets/aji.PNG";
-         listaIngredientes.innerHTML = "<li><p id='ingrediente'>Ají (al gusto)</p></li><li><p id='ingrediente'>Ajo (2-3 dientes)</p></li><li><p id='ingrediente'>Sal (al gusto)</p></li><li><p id='ingrediente'>Pimienta (al gusto)</p></li><li><p id='ingrediente'>Jugo de limón (1-2 cucharadas)</p></li>";
-         var recetaAji = "En un mortero, agrega los ajíes picantes junto con los dientes de ajo pelados y troceados. Comienza a moler los ajíes y el ajo en el mortero con un movimiento circular utilizando el mano del mortero. Continúa machacando hasta obtener una pasta suave y bien combinada. Agrega sal al gusto y mezcla bien. Si deseas un toque de acidez, exprime 1-2 cucharadas de jugo de limón sobre la mezcla y mezcla nuevamente. Si deseas una consistencia más suave, puedes agregar aceite vegetal gradualmente mientras continúas mezclando hasta alcanzar la consistencia deseada. Por último, si deseas añadir pimienta, agrega pimienta negra molida al gusto y mezcla bien para incorporarla a la mezcla de ají en mortero.";
+         headerModal.innerHTML = "Mi primer acercamiento";
+         imgModal.src = "assets/ninio.JPG";
+         var recetaAji = "La primera vez que pude navegar en internet, fue en el pc de Torre de la oficina de mis papás. Mi acceso era limitado, si hacia todas las tareas del colegio podia usar el PC 35 minutos. Además esto solo se daba cuando iba despues del colegio a su lugar del trabajo, cosa que pasaba de vez en cuando.Tendría alrededor de 9 años cuando esto se dió. Recuerdo sentir una fascinación increiblepor la web desde ese momento. Incluso fue ahí que me hice parte de la cibercultura de cierta forma, ya que me hice una cuenta en neopets y habbo hotel, ahí podí hablar con otros niñosy adolescentes de todo el mundo sin saber realmente quienes eran. Sin duda esto despertó en mi una gran afinidad por la web.";
          preparacion.innerHTML = recetaAji;
-         iframe.src = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1534751485&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true";
+         iframe.style.display = 'none';
 
 
-// image.style.display = 'none';
+        //mi primer telefono
         }else if (index==1){
          modal.style.display = 'flex';
-         headerModal.innerHTML = "Consomé";
-         imgModal.src = "assets/consome.jpg";
-         // Change the <li> elements
-        listaIngredientes.innerHTML = "<li><p id='ingrediente'>1 litro de agua</p></li><li><p id='ingrediente'>1 cebolla</p></li><li><p id='ingrediente'>1 zanahoria</p></li><li><p id='ingrediente'>1 rama de apio</p></li><li><p id='ingrediente'>2 dientes de ajo</p></li>";
-        var recetaConsome = "En una cazuela, calienta el agua a fuego medio.\nAgrega la cebolla, zanahoria, apio y ajos.\nOpcionalmente, añade hierbas aromáticas.\nSazona con sal y pimienta.\nHierve a fuego medio-alto durante unos 30 minutos.\nRetira la cazuela del fuego y deja enfriar.\nCuela el consomé para obtener un caldo limpio.\n¡Listo para servir como sopa ligera o utilizar como base en otras recetas!";
+         headerModal.innerHTML = "Mi primer celular";
+         imgModal.src = "assets/bbb.jpg";
+         var recetaConsome = "El primer dispositivo con el que conté por primera vez para acceder a la internet y las plataformas donde habian comunidades fue un BlackBerry curve 8520 que me compré vendiendo dulces en el colego a los 13 años ya que mis padres no querian darme un celular a esa edad (ahora a los 25 los entiendo). Con este celular empecé a chatiar en forma por primera vez (gracias al chat de esta plataforma, el BlackBery chat, que nos dió frases como 'dame tu pin')además de abrir mi primera cuenta de twitter y enamorarme de esta plataforma, la cual sigue siendo a día de hoy mi favorita. Twitter es un lugar mágico en donde cada trino sin importar la 'importancia' o fama de la persona se siente íntimo. Twitter para mí es como un bar gigantesco en donde uno puede interactuar  con una amplia gama de personajes muy interesantes.";
          preparacion.innerHTML = recetaConsome;
-         iframe.src = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1534755988&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true";
+         iframe.style.display = 'none';
 
+         //tuiter
         }else if (index==2){
           console.log("index2");
           modal.style.display = 'flex';
-         headerModal.innerHTML = "Sal Finas Hierbas";
-         imgModal.src = "assets/salecita.jpg";
+         headerModal.innerHTML = "Twitter";
+         imgModal.src = "assets/tuiti.jpg";
          // Change the <li> elements
-        listaIngredientes.innerHTML = "<li><p id='ingrediente'>1/2 libra de sal marina</p></li><li><p id='ingrediente'>2 cucharadas de hierbas secas (por ejemplo, romero, tomillo, orégano, albahaca)</p></li><li><p id='ingrediente'>1 cucharadita de ajo en polvo, pimienta negra molida u otras especias de tu elección</p></li>";
-         var recipeSal = "En un mortero o procesador de alimentos, mezcla la sal marina y las hierbas secas.\nTritura o muele las hierbas junto con la sal hasta obtener una mezcla uniforme.\nTransfiere la sal de hierbas a un frasco hermético.\nEtiqueta el frasco y guárdalo para su uso posterior.\nUtiliza la sal de hierbas para sazonar tus platos favoritos.";
+         var recipeSal = "En el vasto bar cibernético llamado Twitter, las palabras se entrelazan como conversaciones en una noche de verano. Es un lugar donde las opiniones se mezclan en el aire digital, creando un ambiente único donde la conexión se teje a través de breves destellos de pensamientos compartidos. Cada tweet es una nueva invitación a conversar en este bar, Un lugar donde desde el más loco al mas cuerdo puedes encontrar. donde la diversidad es la esencia y cada usuario es un invitado. En este espacio, las fronteras desaparecen, y uno puede entablar charlas efímeras con desconocidos, creando una red de conexiones efervescentes en el inmenso salón de Twitter.";
          preparacion.innerHTML = recipeSal;
+         preparacion.style.fontStyle = 'italic';
          iframe.src = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1534760203&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true";
+
+        }else if (index==3){
+          console.log("index2");
+          modal.style.display = 'flex';
+         headerModal.innerHTML = "Libre acceso";
+         imgModal.src = "assets/surfero.png";
+         // Change the <li> elements
+         var recipeSal = "En el lienzo digital, un universo encantado, la belleza del internet, un sueño despertado. Entre hilos de datos danzando en la red, se esculpen historias que nunca se ven. Navegamos mares de información sin fin, donde la creatividad florece, un jardín. La belleza del internet, un reflejo de almas,donde conexiones se tejen, como finos hilos de gala.";
+         preparacion.innerHTML = recipeSal;
+         preparacion.style.fontStyle = 'italic';
+         iframe.src = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1534760203&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true";
+
+        }else if (index==4){
+          console.log("index2");
+          modal.style.display = 'flex';
+         headerModal.innerHTML = "El código y los sistemas";
+         imgModal.src = "assets/codo.jpg";
+         // Change the <li> elements
+         var recipeSal = "Despues de tener mi primer acercamiento a la internet, de tener mi primer smartphone, de descubrir twitter y tener libre acceso a la web, surgió en mí una pregunta, 'Cómo funciona todo esto?'. Fue ahí que descubrí lo que era el código y de una manera general como este hacia que funcionaran todos los sistemas computacionales y casi todos los aparatos eléctricos. Este primer acercamiento fue muy general, via Wikipedia y Youtube, Aunque fue muy superficial el primer acercamiento, detonó un gran interés por entender de verdad el software. A mis 20 años entre a la universidad a la carrera de Ingeniería de sistemas, en la cual hice 5 semestres, los cuales fueron suficientes para despejar muchas incognitas e ilustrarme de gran forma acerca del software y los sistemas computacionales.";
+         preparacion.innerHTML = recipeSal;
+         preparacion.style.fontStyle = 'italic';
+         iframe.style.display = 'none';
 
         }
          
